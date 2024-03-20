@@ -30,6 +30,43 @@ document.getElementById('formule').innerText = "le nombre " + nb1 + " et " +"le 
 document.getElementById('resultat').innerText = nb1 + "+" + nb2 + " " + "le resultat est " + resultat;
 
 
+//RECUP2RATION DES INPUTS NUMBER
+const input_number_01 = document.getElementById("number1")
+const input_number_02 = document.getElementById("number2")
 
+
+const btn_addition = document.getElementById("add")
+const btn_soustration = document.getElementById("substr")
+const btn_divivision = document.getElementById("div")
+const btn_multiple = document.getElementById("mult")
+let totalResultat;
+
+btn_addition.onclick = function name(params) {
+    let numb1 = parseFloat(input_number_01.value); //parseInt transforme le texte en entier et parseFloat transforme le texte en réel
+    let numb2 = parseFloat(input_number_02.value);
+
+    alert(`la somme est: ${numb1 + numb2}`)
+}
+
+btn_soustration.onclick = function name(params) {
+    let numb1 = parseFloat(input_number_01.value); //parseInt transforme le texte en entier et parseFloat transforme le texte en réel
+    let numb2 = parseFloat(input_number_02.value);
+
+    alert(`la somme est: ${numb1 - numb2}`)
+}
+
+btn_division.onclick = function name(params) {
+    let numb1 = parseFloat(input_number_01.value); //parseInt transforme le texte en entier et parseFloat transforme le texte en réel
+    let numb2 = parseFloat(input_number_02.value);
+
+    alert(`la somme est: ${numb1 / numb2}`)
+}
+
+btn_multiple.onclick = function name(params) {
+    let numb1 = parseFloat(input_number_01.value); //parseInt transforme le texte en entier et parseFloat transforme le texte en réel
+    let numb2 = parseFloat(input_number_02.value);
+
+    alert(`la somme est: ${numb1 * numb2}`)
+}
 
 
