@@ -33,6 +33,7 @@ document.getElementById('resultat').innerText = nb1 + "+" + nb2 + " " + "le resu
 //RECUP2RATION DES INPUTS NUMBER
 const input_number_01 = document.getElementById("number1")
 const input_number_02 = document.getElementById("number2")
+const input_number_03 = document.getElementById("number3")
 
 
 const btn_addition = document.getElementById("add")
@@ -44,29 +45,41 @@ let totalResultat;
 btn_addition.onclick = function name(params) {
     let numb1 = parseFloat(input_number_01.value); //parseInt transforme le texte en entier et parseFloat transforme le texte en réel
     let numb2 = parseFloat(input_number_02.value);
-
     alert(`la somme est: ${numb1 + numb2}`)
 }
 
 btn_soustration.onclick = function name(params) {
     let numb1 = parseFloat(input_number_01.value); //parseInt transforme le texte en entier et parseFloat transforme le texte en réel
     let numb2 = parseFloat(input_number_02.value);
-
     alert(`la somme est: ${numb1 - numb2}`)
 }
 
-btn_division.onclick = function name(params) {
+btn_divivision.onclick = function name(params) {
     let numb1 = parseFloat(input_number_01.value); //parseInt transforme le texte en entier et parseFloat transforme le texte en réel
     let numb2 = parseFloat(input_number_02.value);
-
-    alert(`la somme est: ${numb1 / numb2}`)
+    if (numb2=== 0) {
+        alert(`La division par zéro est impossible`)
+    }else{
+        alert(`la somme est: ${numb1/numb2}`)
+    }
+    console.log('end')
 }
+   
 
 btn_multiple.onclick = function name(params) {
     let numb1 = parseFloat(input_number_01.value); //parseInt transforme le texte en entier et parseFloat transforme le texte en réel
     let numb2 = parseFloat(input_number_02.value);
-
-    alert(`la somme est: ${numb1 * numb2}`)
+    alert(`la somme est: ${numb1*numb2}`)
 }
 
+let monableau= ['Pierre', 'Louie'];
+// alert(monableau[0])
+document.getElementById("table").innerText = (monableau[0])
+
+const btn_table= document.getElementById("table1")
+
+btn_table.onclick = function name(params) {
+    monableau = parseFloat(input_number_03.value);
+    console.log(`Ressort: ${monableau}`)
+}
 
